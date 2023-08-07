@@ -1,11 +1,10 @@
 body{
-    background: linear-gradient(#e6e6fa, #ffff);
+    background-color: #E1EBEE;
 }
+
 .header-images
 {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient( rgba(110,123,251,1) 91.1%  #ffff);
     padding: 30px;
     text-align: right;
     
@@ -19,24 +18,26 @@ footer
 }
 a
 {
-    color: rgb(177, 51, 120);
-    margin-bottom: 0;
+    color: rgb(46, 46, 201);
+    font-family:SpaceGrotesk-Light;
+    font-size: 25px;
+    margin-bottom: 40px;
+    
 }
 .navDiv
 {
     max-width: 1000px;
-    position: relative;
-    margin: auto;
+    float: right;
 }
-.callToAction #tuftingCollection
+/* .callToAction #tuftingCollection
 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     
-}
-.scrapbook, .sprayPaint, .tufting
+} */
+.sprayPaint, .tufting
 {
     overflow-x: scroll;
     white-space: nowrap;
@@ -44,6 +45,13 @@ a
     padding-top: 50px;
 }
 
+.scrapbook
+{
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
 
 input[type = text], input[type = password], input[type = email]
 {
@@ -130,6 +138,17 @@ textarea
   outline: none;
   font-size: 15px;
   display: inline-block;
+  font-family: Gill Sans, Verdana;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: rgb(46, 46, 201);
+ }
+
+ .collapsingForms:hover
+ {
+    background: linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1%);
  }
 .ReviewDiv, .SignInDiv, .SignUpDiv
 {
@@ -167,10 +186,10 @@ card-image
 {
     overflow: hidden;
     height: 510px;
-    /* width: 100%; */
+    width: 100%; 
     margin: 0 auto;
     padding-top: 60px;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .containers, .carousel-image
 {
@@ -180,9 +199,12 @@ card-image
 }
 .slideshow-wrapper {
    
-   
+    /* Calculate the total width on the
+      basis of number of slides */
       width: calc(728px * 3);
-   
+     
+    /* Specify the animation with the
+      duration and speed */
       animation: slide 10s ease infinite;
     }
     @keyframes slide {
@@ -195,11 +217,30 @@ card-image
       }
      
       60% {
-        margin-left: calc(-450px * 2);
+        margin-left: calc(-500px * 2);
       }
      
       /* 80% {
         margin-left: calc(-728px * 3);
       } */
     }
-
+h4, h2
+{
+    font-family: Gill Sans, Verdana;
+	font-size: 25px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+    color: rgb(46, 46, 201);
+}
+.card-body
+{
+    background : linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    font-family:SpaceGrotesk-Medium;
+    font-weight: bolder;
+    max-width: 520px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(25, 25, 224);
+}
