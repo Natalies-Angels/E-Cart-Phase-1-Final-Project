@@ -9,13 +9,15 @@
         
     </head>
     <body>
+ <div class="header-images">
     <header class="header">
         <div class="navDiv">
             <nav>         
-                <a href="">Login</a>
-                <a href="">About us</a>
+                <a href="#signIn">Login | </a>
+                <a href="#footer">Contact us |</a>
+                <a href="">About us | </a>
                 <a href="">Shop</a>
-                <a href="">Contact us</a>
+               
             </nav>
         </div>
     </header>
@@ -23,20 +25,22 @@
     <div class="carousel-container">
       <div class="slideshow-wrapper">
         <div class="containers">
-            <img class = "carousel-image"src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/yarnTuft.jpeg" alt="Yarn">
+            <img class = "carousel-image"src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/firstCarousel.png" alt="Yarn">
         </div>
 
         <div class="containers">
-            <img class = "carousel-image"src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/tuftingGun.jpeg" alt="tuftingGun">
+            <img class = "carousel-image"src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/tuftingGunCarousel.png" alt="tuftingGun">
         </div>
 
         <div class="containers">
-            <img class = "carousel-image"src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/tuftingCloth.jpeg" alt="tuftingCloth">
+            <img class = "carousel-image"src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/tuftingClothCarousel.png" alt="tuftingCloth">
         </div>
         </div>
         </div><br><br><br>
-        <!-- <h3> To continue shopping, <button>signIn</button> or <button>SignUp</button> if you already have an account</h3><br><br> -->
+    
+     </div>   
         <div class="scrapbook">
+            <h4>Scrapbooking Collection</h4>
           <div class="card">
                 <div class="card-image">
                      <img src="/home/natalie/Development/code/E-Cart-Phase-1-Final-Project/assets/glitterScrap.jpeg" alt="Glitters">
@@ -240,7 +244,7 @@
                 <input type="submit" value="SignUp"><br><br>
             </form>
         </div><br><br>
-        <button type="button" class="collapsingForms">Click here to signIn</button>
+        <button type="button" id = "signIn"class="collapsingForms">Click here to signIn</button>
         <div class="SignInDiv">
             <form  method="post" action="https://dummyjson.com/auth/login" id="SignIn">
                 <label for="Uname">Username</label><br>
@@ -253,7 +257,7 @@
         <section id="userDetails">
             <p> </p>
           </section>
-        <footer>
+        <footer id="footer">
             <p>Contact us:</p>
             <p>example@example.com</p>
             <p>Tel no :+123 341 456 456</p>
