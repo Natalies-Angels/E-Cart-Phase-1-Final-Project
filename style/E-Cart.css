@@ -1,26 +1,27 @@
 body{
-    background-color: #E1EBEE;
+background: rgb(200,231,255);
+background: linear-gradient(90deg, rgba(200,231,255,1) 0%, rgba(245,226,254,1) 50%, rgba(250,194,114,1) 100%);
 }
 
 .header-images
 {
     margin: 0;
     padding: 30px;
-    text-align: right;
+   
     
 }
 footer
 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    background: linear-gradient(90deg, rgba(141,201,246,1) 0%, rgba(240,205,255,1) 50%, rgba(252,176,69,1) 100%);
     padding: 10px;
 }
 a
 {
-    color: rgb(46, 46, 201);
-    font-family:SpaceGrotesk-Light;
-    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #156669;
+    font-size: 20px;
     margin-bottom: 40px;
     
 }
@@ -28,29 +29,27 @@ a
 {
     max-width: 1000px;
     float: right;
-}
-/* .callToAction #tuftingCollection
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
     
-} */
+}
+
 .sprayPaint, .tufting
 {
     overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
     margin-bottom: 50px;
     padding-top: 50px;
+   
 }
 
 .scrapbook
 {
     overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
     margin-bottom: 50px;
     padding-top: 30px;
+    
 }
 
 input[type = text], input[type = password], input[type = email]
@@ -72,6 +71,8 @@ input[type = submit]
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    background: #156669;
+    color: white;
 }
 
 input[type = submit]:hover
@@ -80,7 +81,7 @@ input[type = submit]:hover
 }
 .SignUpDiv, .SignInDiv, .ReviewDiv
 {
-    background: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    background: linear-gradient(90deg, rgba(141,201,246,1) 0%, rgba(240,205,255,1) 50%, rgba(252,176,69,1) 100%);
     padding: 20px;
     margin: 100px;
     width: 400px;   
@@ -129,7 +130,7 @@ textarea
  .collapsingForms
  {
  
-  background: linear-gradientlinear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+  background: #156669;
   cursor: pointer;
   padding: 18px;
   width: 436px;
@@ -143,12 +144,12 @@ textarea
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
-  color: rgb(46, 46, 201);
+  color: white;
  }
 
  .collapsingForms:hover
  {
-    background: linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1%);
+    background: linear-gradient(90deg, rgba(141,201,246,1) 0%, rgba(240,205,255,1) 50%, rgba(252,176,69,1) 100%)
  }
 .ReviewDiv, .SignInDiv, .SignUpDiv
 {
@@ -181,49 +182,13 @@ card-image
     margin-left: 40px;
 }
 
-
-.carousel-container
-{
-    overflow: hidden;
-    height: 510px;
-    width: 100%; 
-    margin: 0 auto;
-    padding-top: 60px;
-    border-radius: 10px;
-}
-.containers, .carousel-image
+.containers
 {
   float: left; 
   height: 510px;
   width: 728px;
 }
-.slideshow-wrapper {
-   
-    /* Calculate the total width on the
-      basis of number of slides */
-      width: calc(728px * 3);
-     
-    /* Specify the animation with the
-      duration and speed */
-      animation: slide 10s ease infinite;
-    }
-    @keyframes slide {
-    20% {
-        margin-left: 0px;
-      }
-     
-      40% {
-        margin-left: calc(-728px * 1);
-      }
-     
-      60% {
-        margin-left: calc(-500px * 2);
-      }
-     
-      /* 80% {
-        margin-left: calc(-728px * 3);
-      } */
-    }
+
 h4, h2
 {
     font-family: Gill Sans, Verdana;
@@ -232,15 +197,62 @@ h4, h2
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
-    color: rgb(46, 46, 201);
+    color: #156669;
 }
 .card-body
 {
-    background : linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+   background-color: #156669;
     font-family:SpaceGrotesk-Medium;
     font-weight: bolder;
     max-width: 520px;
     text-transform: uppercase;
     font-size: 16px;
-    color: rgb(25, 25, 224);
+    color: white;
+}
+.card:hover
+{
+    transform: scale(1.25);
+    box-shadow: 0 0 40px -10px rgba();
+}
+.callToAction img
+{ 
+    float: left;
+    max-width: 100%;
+    /* padding-top: 100px; */
+    border-radius: 20px;
+    margin-top: 100px;
+    height: 400px;
+    margin-left: 40px;
+    
+   
+}
+.callToAction
+{
+height: 550px;
+max-width: 100%;
+background: rgb(141,201,246);
+background: linear-gradient(90deg, rgba(141,201,246,1) 0%, rgba(240,205,255,1) 50%, rgba(252,176,69,1) 100%);
+margin-top: 40px;
+}
+.callToAction p
+{
+    float: right;
+    font-size: 70px;
+    margin-top: 180px;
+    margin-right: 90px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #156669;
+}
+.callToAction button
+{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: #156669;
+   color: white;
+   border: #156669 solid;
+   cursor: pointer;
 }
